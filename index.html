@@ -9,38 +9,57 @@
     <title>Funkoshop</title>
 </head>
 <body>
-    <header>
-        
-        <nav class="navbar__container">
-            <section class="navbar__items">
-                    <picture>
+        <header>
+                <nav class="navbar container">
+    
+                    <picture class="navbar__logo">
                             <a href="./index.html">
                                 <img src="./Images/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                             </a>
                     </picture>
-            </section>
-                
-            <section class="navbar__items">
-                     <ul>
-                        <li><a class="links__navbar" href="./pages/shop.html">SHOP</a></li>
-                        <li><a class="links__navbar" href="./pages/contacto.html">CONTACTO</a></li>
-                        <li><a class="links__navbar" href="./pages/login.html">LOGIN</a></li>
-                        <li><a class="links__navbar" href="pages/car.html"><img src="./Images/icons/cart-icon.svg" alt="Car Icon"></a></li>
-                     </ul>
-            </section>
-        </nav>
+            
+                    <ul class="navbar__menu">
 
+                            <li class="navbar__item with-submenu">
+                                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                                <ul class="submenu">
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">Funkos</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">Remeras</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="" class="submenu__link">LLaveros</a>
+                                    </li>
+                                </ul>
+                            </li>
+                           
 
-
-    </header>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__cart" href="pages/car.html"><img src="./Images/icons/cart-icon.svg" alt="Car Icon"></a>
+                            </li>
+                    </ul>
+        
+                 </nav>
+         </header>
 
     <main>
-        <section>
-            <article>
+        
+        <section class="main__banner">
+            <article class="article__banner">
                 <h3> Nuevos Ingresos</h3>
                 <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="./pages/shop.html">SHOP</a>
-            </article>
+                <button>
+                    <a href="./pages/shop.html">SHOP</a>
+                </button>
+             </article>
         </section>
 
         <section>
@@ -153,6 +172,6 @@
         </section>
     </footer>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
